@@ -1,20 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	t, f := true, false
-	fmt.Printf("%T %v\n", t, t)
-	fmt.Printf("%T %v\n", f, f)
+	var x int = 1
+	xx := float64(x)
+	fmt.Printf("%T %v %f\n", xx, xx, xx)
 
-	fmt.Println(true && true)
-	fmt.Println(true && false)
-	fmt.Println(false && false)
+	var y float64 = 1.2
+	yy := int(y)
+	fmt.Printf("%T %v %d\n", yy, yy, yy)
 
-	fmt.Println(true || true)
-	fmt.Println(true || false)
-	fmt.Println(false || false)
-
-	fmt.Println(!true)
-	fmt.Println(!false)
+	var s string = "14"
+	i, _ := strconv.Atoi(s)
+	fmt.Printf("%T %v", i, i)
 }
