@@ -2,21 +2,13 @@ package main
 
 import "fmt"
 
-var (
-	i int = 1
-	f64 float64 = 1.2
-	s string = "test"
-	t, f bool = true, false
+const Pi = 3.14
+
+const (
+	Username = "test_user"
+	Password = "test_pass"
 )
 
 func main() {
-	fmt.Println(i, f64, s, t, f)
-
-	xi := 1
-	xi = 2
-	var xf32 float32 = 1.2
-	xs := "test"
-	xt, xf := true, false
-	fmt.Printf("%T\n", xf32)
-	fmt.Println(xi, xf32, xs, xt, xf)
+	fmt.Println(Pi, Username, Password)
 }
